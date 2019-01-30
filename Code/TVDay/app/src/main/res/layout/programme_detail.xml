@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/programme_titre"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:layout_height="match_parent"
+        android:textIsSelectable="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:context="pm.iut.fr.tvday.programmes.ProgrammeDetailFragment" />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/programme_description"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:textIsSelectable="true"
+        tools:context="pm.iut.fr.tvday.programmes.ProgrammeDetailFragment"
+        android:layout_below="@id/programme_titre"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/programme_lien"
+        style="?android:attr/textAppearanceLarge"
+        android:padding="16dp"
+        android:textIsSelectable="true"
+        tools:context="pm.iut.fr.tvday.programmes.ProgrammeDetailFragment"
+        android:layout_below="@id/programme_description"
+        android:autoLink="web"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/programme_note"
+        android:padding="16dp"
+        android:textIsSelectable="true"
+        style="?android:attr/textAppearanceLarge"
+        tools:context="pm.iut.fr.tvday.programmes.ProgrammeDetailFragment"
+        android:layout_below="@id/programme_lien"/>
+
+</RelativeLayout>

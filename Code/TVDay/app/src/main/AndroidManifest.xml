@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pm.iut.fr.tvday">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".programmes.ProgrammeListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".programmes.ProgrammeDetailActivity"
+            android:label="@string/title_programme_detail"
+            android:parentActivityName=".programmes.ProgrammeListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pm.iut.fr.tvday.programmes.ProgrammeListActivity" />
+        </activity>
+        <activity
+            android:name=".chaines.ChainesListActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".chaines.ChainesDetailActivity"
+            android:label="@string/title_programme_detail"
+            android:parentActivityName=".chaines.ChainesListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pm.iut.fr.tvday.chaines.ChainesListActivity" />
+        </activity>
+
+        <activity android:name=".programmeDUneChaine.ProgrammeChaineActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".chaines.ChainesDetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pm.iut.fr.tvday.chaines.ChainesDetailActivity" />
+        </activity>
+        <receiver android:name=".notification.NotificationPublisher" />
+    </application>
+
+</manifest>

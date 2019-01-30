@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TVDay</string>
+    <string name="title_programme_detail">Programme Detail</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="test">test</string>
+    <string name="image">image</string>
+    <string name="info">Vous n\'avez pas activé internet donc, vous n\'avez pas accès aux programmes.</string>
+    <string name="en_ce_moment">En ce moment</string>
+    <string name="liste_des_programmes">Liste des programmes</string>
+</resources>
